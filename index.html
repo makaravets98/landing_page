@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>landing page</title>
+</head>
+<body>
+    <header>
+        <div class="center-block-main">
+            <nav>
+                <ul>
+                  <li id="firstLi">
+                    <img src="image/burger.png" alt="">
+                  </li>
+                  <li class="target_1">Introduction</li>
+                  <li class="target_1">Our work</li>
+                  <li class="target_1">About us</li>
+                  <li class="target_1">Get in touch</li>
+                </ul>
+              </nav>
+            <div class="block-1-info">
+                <h2>We've got the talent</h2>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                    Voluptatem dolores earum soluta minus id delectus deserunt amet quod pariatur rem.</p>
+                    <img src="image/mause.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+      <div class="center-block-main second-block">
+        <h2>Introduction</h2>
+        <div class="line-2"></div>
+        <p>Ad ducimus placeat ipsam consectetur nihil, id nostrum tempore laudantium? <br>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+          Voluptatibus aliquam suscipit delectus aspernatur reiciendis.
+           </p>
+      </div>
+      <div class="third-block">
+        <div class="center-block-main third-block-info">
+          <h2>Pure Creativity.</h2>
+        </div>
+      </div>
+      <div class="four-block">
+        <div class="center-block-main four-block-info">
+          <h2>Some of our work</h2>
+          <div class="line-2"></div>
+          <nav class="four-nav-info">
+            <ul>
+              <li><a href="">All</a></li>
+              <li><a href="">Branding</a></li>
+              <li><a href="">Web design</a></li>
+              <li><a href="">Mobile ui</a></li>
+              <li><a href="">illustrations</a></li>
+            </ul>
+          </nav>
+          <div class="work-photo">
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    
+
+    <script>
+        var targetItems = document.querySelectorAll('.target_1:not(#firstLi)');
+        var firstLi = document.getElementById('firstLi');
+      
+        firstLi.addEventListener('click', function() {
+          targetItems.forEach(function(item, index) {
+            setTimeout(function() {
+              item.classList.toggle('show');
+            }, index * 100);
+          });
+        });
+      </script>
+
+      
+</body>
+</html>
