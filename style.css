@@ -101,11 +101,28 @@ body{
 }
 header{
     height: 900px;
-    background-image: url(image/background_image_header.jpg);
+    background-image: url(image/background_image_header_1-1.png);
     background-size: cover; /* Растягивает картинку, чтобы заполнить весь задний фон блока */
     background-position: center; /* Центрирует картинку по горизонтали и вертикали */
     background-repeat: no-repeat;
+    position: relative;
 }
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: linear-gradient(to right, rgb(242, 166, 72), rgb(254, 72, 72));
+    z-index: 1;
+  }
+  .content{
+    position:relative;
+    z-index:2;;
+  }
 nav{
     margin-bottom: 250px;
 }
@@ -127,7 +144,6 @@ nav ul li{
     font-size: 1.375em;
     font-family: 'PT Serif', serif;
     text-decoration: none;
-  
     opacity: 0;
     position: relative;
     left: -50px;
@@ -205,11 +221,11 @@ nav ul li a:hover{
     font-size: 0.875em;
 }
 .third-block{
-    background-image: url(image/Mac.png);
+    background-image: url(image/Mac-1.png);
     background-size: cover; /* Растягивает картинку, чтобы заполнить весь задний фон блока */
     background-position: center; /* Центрирует картинку по горизонтали и вертикали */
     background-repeat: no-repeat;
-    height: 540px;
+    height: 500px;
 }
 .third-block-info{
     display: flex;
@@ -232,6 +248,9 @@ nav ul li a:hover{
     align-items: center;
 
 }
+.four-block-info nav{
+    margin-bottom: 70px;
+}
 .four-block-info h2{
     margin-top: 60px;
     margin-bottom: 40px;
@@ -247,4 +266,110 @@ nav ul li a:hover{
 .four-block-info nav ul li:hover a{
     color: black;
     font-weight: bold;
+}
+
+.work-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.photo-1{
+    background-image: url(image/our_projects_1.png);
+}
+.photo-2{
+    background-image: url(image/our_projects_2.png);
+}
+.photo-3{
+    background-image: url(image/our_projects_3.png);
+}
+.photo-4{
+    background-image: url(image/our_projects_4.png);
+}
+.photo-5{
+    background-image: url(image/our_projects_5.png);
+}
+.photo-6{
+    background-image: url(image/our_projects_6.png);
+}
+.work-photo-block{
+   
+    background-position: left;
+    background-size: cover;
+    height: 420px;
+    width: 375px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.work-photo-block h3{
+    margin-top: 150px;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.work-photo-block p{
+    margin-top: 15px;
+    font-size: 0.875em;
+    margin-bottom: 20px;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.line-3{
+    border-top: 2px solid white;
+    width: 7%;
+    z-index: 1;
+    opacity: 0;
+  transition: opacity 0.3s ease;
+}
+  
+  .work-photo-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Цвет затемнения */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .work-photo-block:hover::before {
+    opacity: 1;
+    border: 10px solid black;
+    background-origin: border-box;
+    box-sizing: border-box;
+  }
+
+.work-photo-block:hover h3,
+.work-photo-block:hover p,
+.work-photo-block:hover .line-3 {
+  opacity: 1;
+}
+
+.show-more{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 7px 135px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    font-size: 0.875em;
+    font-weight: bold;
+}
+.five-block{
+    height: 480px;
+    background-image: url(image/background_image_main_2-1.png);
+    background-size: cover; /* Растягивает картинку, чтобы заполнить весь задний фон блока */
+    background-position: center; /* Центрирует картинку по горизонтали и вертикали */
+    background-repeat: no-repeat;
+    position: relative;
 }
