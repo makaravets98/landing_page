@@ -184,7 +184,6 @@ nav ul li a:hover{
     width: 7%;
 }
 .block-1-info p{
-    font-size: 0.875em;
     color: white;
     text-align: center;
     margin-top: 30px;
@@ -218,7 +217,6 @@ nav ul li a:hover{
     text-align: center;
     margin-bottom: 60px;
     line-height: 1.4;
-    font-size: 0.875em;
 }
 .third-block{
     background-image: url(image/Mac-1.png);
@@ -540,5 +538,111 @@ nav ul li a:hover{
     border: 2px solid grey;
     box-sizing: border-box;
 }
+
+.eight-block{
+  background-image: url(image/background_image_main_3-1.png);
+    background-size: cover; /* Растягивает картинку, чтобы заполнить весь задний фон блока */
+    background-position: center; /* Центрирует картинку по горизонтали и вертикали */
+    background-repeat: no-repeat;
+    
+}
+.eight-block-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  
+}
+
+.nine-block{
+  background-color: #f4f4f4;
+  padding-top: 80px;
+  height: 600px;
+}
+.nine-block-info{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nine-block-info h2{
+  font-size: 1.375em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nine-block-info .p-nine-block{
+  width: 50%;
+  color: #4e4e4e;
+  text-align: center;
+  margin-bottom: 80px;
+ 
+
+}
+.my-slider{
+  width: 900px;
+ 
+}
+.unslider-nav{
+ margin-bottom: 0;
+}
+.my-slider ul li{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
+.my-slider ul li h3{
+  font-size: 1.375em;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.my-slider ul li img{
+  display: block;
+  margin: 0 auto;
+}
+#p-slider{
+  font-size: 0.875em;
+  text-align: center;
+  width: 30%;
+  color: #4e4e4e;
+  margin: 0 auto;
+}
+
+
+.ten-block{
+  background-image: url(image/background_image_main_4-1.png);
+    background-size: cover; /* Растягивает картинку, чтобы заполнить весь задний фон блока */
+    background-position: center; /* Центрирует картинку по горизонтали и вертикали */
+    background-repeat: no-repeat;
+    
+}
+.ten-block-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  
+}
+.ten-block-info h2{
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+  font-family: 'PT Serif', serif;
+  font-size: 1.375em;
+  border: 2px solid white;
+  padding: 10px 70px 10px 70px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
 
   

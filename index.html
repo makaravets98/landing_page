@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/unslider-dots.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -148,9 +150,87 @@
                   </div>
           </div>
         </div>
+        <div class="eight-block">
+          <div class="center-block-main eight-block-info">
+            <a href="https://www.youtube.com/watch?v=mOMLoUN8fbs&ab_channel=oblomoff"><img src="image/start-video.png" alt=""></a>
+          </div>
+        </div>
+        <div class="nine-block">
+          <div class="center-block-main nine-block-info">
+            <h2>Why choose us</h2>
+            <div class="line-2"></div>
+            <p class="p-nine-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <div class="my-slider">
+              <ul>
+                  <li>
+                    <img src="image/iphone.png" alt="">
+                    <h3>App Design</h3>
+                    <p id="p-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      ilabore et dolore.</p>
+                  </li> 
+                  <li>
+                   <img src="image/ipad.png" alt="">
+                    <h3>Responsive Layout</h3>
+                    <p id="p-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      ilabore et dolore.</p>
+                  </li>
+                  <li> 
+                   <img src="image/mac-pro.png" alt="">
+                    <h3>Pixel Perfect Design</h3>
+                    <p id="p-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      ilabore et dolore.</p>
+              </ul>
+          </div>
+          </div>
+        </div>
+        <div class="ten-block">
+          <div class="center-block-main ten-block-info">
+            <h2>Get a quote now.</h2>
+          </div>
+        </div>
     </main>
 
     
+
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/unslider-min.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $('.my-slider').unslider({
+                autoplay:true,
+                speed:1700,
+                arrows:false
+            });
+        });
+    </script>
+
+
+    <script>
+	    function setEqualHeight(columns) { 
+		    var tallestcolumn = 0; 
+		    columns.each( function() { 
+			    currentHeight = $(this).height(); 
+			    if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } ); 
+			    columns.height(tallestcolumn); 
+		    } 
+		$(document).ready(function() { setEqualHeight($(".my-slider")); });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script>
         var targetItems = document.querySelectorAll('.target_1:not(#firstLi)');
